@@ -62,14 +62,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        //悬浮按钮
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            //Snackbar使用，
-//            //coordinator监控子控件，滑动
-//            @Override
-//            public void onClick(View view) {
-//                Toast.makeText(MainActivity.this,"aaaaaaaaaaaaaaaaaaa",Toast.LENGTH_LONG).show();
+        //悬浮按钮
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            //Snackbar使用，
+            //coordinator监控子控件，滑动
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this,"aaaaaaaaaaaaaaaaaaa",Toast.LENGTH_LONG).show();
                 Snackbar.make(view, "delete!!!!!!!!!!", Snackbar.LENGTH_INDEFINITE)
                         .setAction("取消", new View.OnClickListener() {
                             @Override
