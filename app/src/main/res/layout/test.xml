@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_gravity="end|bottom"/>
+    <!--CoordinatorLayout使用新的思路通过协调调度子布局的形式实现触摸影响布局的形式
+    产生动画效果。CoordinatorLayout通过设置子View的 Behaviors来调度子View。
+    系统（Support V7）提供了AppBarLayout.Behavior, AppBarLayout.ScrollingViewBehavior,
+     FloatingActionButton.Behavior, SwipeDismissBehavior<V extends View> 等。-->
+
+</android.support.design.widget.CoordinatorLayout>

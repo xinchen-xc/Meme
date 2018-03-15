@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "27.0.1"
+    defaultConfig {
+        applicationId "com.example.hao.snackbar"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //第一行就是 Design Support 库，第二行是一个开源项目
+    //Circlelmage View ，它可以用来轻松实现图片圆形化的功能
+    
+
+//    compile 'com.android.support:design:26.+'
+    //Glide 是一个超级强大的图片加载库，它不仅可以用于加载本地图片，还可以加载网络图片、 GIF 图片、甚至是本地视频。
+    // 最重要的是，Glide 的用法非常简单，只需一行代码就能轻松实现复杂的图片加载功能
+    
+    compile 'com.android.support:design:26.+'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/backup"
+        android:icon="@drawable/backup"
+        android:title="Backup"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/delete"
+        android:title="Delete"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/setting"
+        android:title="Settings"
+        app:showAsAction="never" />
+    <!--<item-->
+        <!--android:id="@+id/home"-->
+        <!--android:icon="@drawable/menu"-->
+        <!--android:title="home"-->
+        <!--app:showAsAction="always" />-->
+
+    <!--showAsAction是否显示：总是/空间充足/不显示-->
+
+</menu>

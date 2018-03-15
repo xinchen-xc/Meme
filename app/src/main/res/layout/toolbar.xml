@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:label="Fruits"/>
+
+    <!--xmlns:app 指定了一个新的命名空间
+    Material Design 是在Android5.0 系统中才出现的
+    使用app:attribute 为了能够兼容之前的老系统 -->
+
+    <!--android:theme 属性，将 Toolbar 的主题指定成深色主题-->
+
+    <!--app:popupTheme 属性单独将弹出的菜单项指定成了淡色主题。-->
+
+    <!--android:label 属性，用于指定在 Too1bar 中显示的文字内容-->
+</FrameLayout>

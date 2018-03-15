@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MemeActivityTheme" parent="AppTheme">
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MemeActivityTheme."    parent="AppTheme">
+
+    </style>
+</resources>
+    <!--android:statusBarColor 属性的值指定成@android:color/transparent 就在程序的主题中将状态栏颜色指定成透明色-->

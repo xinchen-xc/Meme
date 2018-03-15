@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item
+            android:id="@+id/backup"
+            android:icon="@drawable/backup"
+            android:title="Backup"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/delete"
+            android:icon="@drawable/delete"
+            android:title="Delete"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/setting"
+            android:title="Settings"
+            app:showAsAction="never" />
+    </menu>
+
+    <!--们通过<item>标签来定义 action 按钮， android:id 用于指定按钮的 id-->
+    <!--android:icon 用于指定按钮的图标， android:title 用于指定按钮的文字。-->
+
+    </LinearLayout>
